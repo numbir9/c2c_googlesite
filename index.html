@@ -1,177 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Land Investment</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-    }
-
-    /* HERO */
-    .hero {
-      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      background: #2c7a7b;
-      color: white;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      border-radius: 5px;
-    }
-
-    /* FEATURES */
-    .features {
-      display: flex;
-      justify-content: space-around;
-      padding: 50px;
-      text-align: center;
-    }
-
-    /* LISTINGS */
-    .listings {
-      padding: 50px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .card img {
-      width: 100%;
-    }
-
-    .card-content {
-      padding: 15px;
-    }
-
-    /* ABOUT */
-    .about {
-      display: flex;
-      padding: 50px;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .about img {
-      width: 50%;
-      border-radius: 10px;
-    }
-
-    /* CTA */
-    .cta {
-      background: #2c7a7b;
-      color: white;
-      text-align: center;
-      padding: 40px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Land Investments</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
+<!-- NAV -->
+<header class="nav">
+  <div class="logo">PrimeLand</div>
+  <a href="#listings">Listings</a>
+  <a href="#about">About</a>
+  <a href="#contact" class="btn-small">Get Started</a>
+</header>
+
 <!-- HERO -->
 <section class="hero">
-  <div>
-    <h1>Own Your Piece of Land</h1>
-    <p>Affordable land across the U.S. with easy financing</p>
-    <a href="#" class="btn">View Listings</a>
+  <div class="hero-content">
+    <h1>Invest in Land Across the U.S.</h1>
+    <p>Secure, affordable, and flexible owner-financed land opportunities.</p>
+    <a href="#listings" class="btn">Browse Properties</a>
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features">
-  <div>
-    <h3>Affordable Prices</h3>
-    <p>Land for every budget</p>
-  </div>
-  <div>
-    <h3>Owner Financing</h3>
-    <p>No banks needed</p>
-  </div>
-  <div>
-    <h3>Nationwide</h3>
-    <p>Properties across the U.S.</p>
-  </div>
+<!-- VALUE -->
+<section class="value">
+  <div class="card">✔ Owner Financing</div>
+  <div class="card">✔ Nationwide Properties</div>
+  <div class="card">✔ Low Down Payments</div>
 </section>
 
 <!-- LISTINGS -->
-<section class="listings">
-  <h2>Featured Properties</h2>
+<section id="listings" class="listings">
+  <h2>Featured Land</h2>
+
   <div class="grid">
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-      <div class="card-content">
-        <h4>Arizona Land</h4>
-        <p>$199/month</p>
-        <a href="#" class="btn">View</a>
-      </div>
+    <div class="property">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
+      <h3>Arizona Desert Lot</h3>
+      <p>$199/mo — 1.25 Acres</p>
+      <button onclick="openForm('Arizona Desert Lot')">Inquire</button>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e">
-      <div class="card-content">
-        <h4>Texas Acreage</h4>
-        <p>$299/month</p>
-        <a href="#" class="btn">View</a>
-      </div>
+    <div class="property">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" />
+      <h3>Texas Ranch Land</h3>
+      <p>$249/mo — 2 Acres</p>
+      <button onclick="openForm('Texas Ranch Land')">Inquire</button>
+    </div>
+
+    <div class="property">
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" />
+      <h3>Florida Build Lot</h3>
+      <p>$179/mo — 0.8 Acres</p>
+      <button onclick="openForm('Florida Build Lot')">Inquire</button>
     </div>
 
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about">
-  <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
-  <div>
-    <h2>About Us</h2>
-    <p>We help people invest in land with simple and flexible financing options.</p>
-  </div>
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    We specialize in making land ownership simple, affordable, and accessible.
+    Our mission is to help individuals build wealth through real estate.
+  </p>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-  <h2>Start Your Land Investment Today</h2>
-  <a href="#" class="btn">Get Started</a>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Get Property Details</h2>
+
+  <form name="lead" method="POST" data-netlify="true">
+    <input type="hidden" name="property" id="propertyField"/>
+
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <textarea name="message" placeholder="Your message"></textarea>
+
+    <button type="submit">Send Inquiry</button>
+  </form>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 Land Company</p>
+  <p>© 2026 PrimeLand Investments</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
