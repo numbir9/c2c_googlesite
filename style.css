@@ -1,54 +1,77 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
   color: #222;
+  line-height: 1.6;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  background: #1f6f5b;
+  padding: 15px 30px;
+  background: #0f3d2e;
   color: white;
 }
 
-.nav a {
+.cta-small {
   color: white;
-  margin-left: 10px;
+  text-decoration: none;
+  background: #1f6f5b;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429') center/cover;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.55);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #1f6f5b;
+  color: white;
   text-decoration: none;
 }
 
-.hero-text {
-  padding: 40px;
-  background: #f5f5f5;
+.intro, .section-light, .section-dark {
+  padding: 50px 25px;
 }
 
-.content {
-  padding: 40px;
-}
-
-.content ul {
-  padding-left: 20px;
+.section-dark {
+  background: #f2f2f2;
 }
 
 blockquote {
-  font-style: italic;
-  background: #eee;
-  padding: 15px;
   border-left: 4px solid #1f6f5b;
+  padding-left: 15px;
+  font-style: italic;
+  background: #fafafa;
 }
 
-.form-section, .extra {
-  padding: 40px;
-  background: #fafafa;
+.form-section, .final-cta {
+  padding: 50px 25px;
+  background: #f7f7f7;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
   gap: 10px;
+  max-width: 420px;
 }
 
 input, button {
@@ -63,8 +86,8 @@ button {
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
   background: #111;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
